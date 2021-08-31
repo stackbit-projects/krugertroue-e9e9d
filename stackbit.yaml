@@ -1,0 +1,29 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  projects:
+    type: data
+    label: Projects
+    file: projects.yml
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: name
+          label: Name
+        - type: string
+          name: gh_user
+          label: Gh User
+        - type: string
+          name: repo
+          label: Repo
+        - type: image
+          name: img
+          label: Img
+        - type: string
+          name: desc
+          label: Desc
